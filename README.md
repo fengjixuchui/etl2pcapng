@@ -19,7 +19,9 @@ opening with Wireshark.
 
 # Usage
 
-Prebuilt binaries are available in the "bin" directory. Run the tool with:
+Prebuilt binaries are available in the Releases section: https://github.com/microsoft/etl2pcapng/releases
+
+Run the tool with:
 
 etl2pcapng.exe in.etl out.pcapng
 
@@ -35,6 +37,8 @@ msbuild -t:rebuild -p:configuration=release -p:platform=win32
 msbuild -t:rebuild -p:configuration=release -p:platform=x64
 
 # History
+
+1.2.0 - Write direction info of each packet (epb_flags)
 
 1.1.0 - Added support for multi-event packets found in traces from Win8 and older
 
